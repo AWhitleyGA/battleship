@@ -1,5 +1,5 @@
 class Square
-  attr_accessor :x, :y, :selected, :boat_id, :boat_index
+  attr_accessor :x, :y, :selected, :boat_id, :boat_index, :display
   @@all = []
   @@count = 0
   def self.all
@@ -16,7 +16,7 @@ class Square
     @x = x
     @y = y
     @selected = false
-    @display = ' '
+    @display = " "
     @boat_id = nil
     @boat_index = nil
     @@count += 1
